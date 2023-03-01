@@ -1,0 +1,118 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/btns.css" />
+  <link rel="stylesheet" href="owfont-regular.css">
+  <link rel="stylesheet" href="css/btn.css" />
+  <title>momentum</title>
+</head>
+
+<body>
+  <div class="content">
+    <div class="header">
+      <div class="player">
+        <p class="player-name">Andy Hunter feat Beth Bullock - Spiral</p>
+        <div class="player-controls" style="">
+            <button class="play-prev player-icon"></button>
+            <button class="play player-icon"></button>
+            <button class="play-next player-icon"></button>
+            <input type="range" id="player-progress-bar" name="progress-audio" value="0" min="0" max="100" step="0.1" style="background: linear-gradient(to right, rgb(240, 163, 91) 0%, rgb(240, 163, 91) 0%, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);">
+            <p class="player-time">
+                <span class="player-current-time">0:00</span>
+                / <span class="player-duration">0:00</span>
+            </p>
+            <button class="player-volume-yes player-volume player-icon"></button>
+            
+            <input type="range" id="range-volume" name="range-volume" value="70" min="0" max="100" step="1" style="background: linear-gradient(to right, rgb(240, 163, 91) 0%, rgb(240, 163, 91) 22%, rgb(255, 255, 255) 22%, rgb(255, 255, 255) 100%);">
+            <button class="player-minimize">
+                <span class="line"></span>
+            </button>
+        </div>
+        <ul class="play-list active"></ul>
+    </div>
+      <!--
+      <div class="player">
+        <div class="player-controls">
+          <button class="play-prev player-icon"></button>
+          <button class="play-main player-icon"></button>
+          <button class="play-next player-icon"></button>
+        </div>
+        <ul class="play-list">
+          <li>
+            <div class="play player-list"></div>
+            <span>Aqua Caelestis</span>
+            <audio src="assets/sounds/Aqua_Caelestis.mp3"></audio>
+          </li>
+          <li>
+            <div class="play player-list"></div>
+            <span> River Flows In You</span>
+            <audio src="assets/sounds/River_Flows_In_You.mp3"></audio>
+          </li>
+          <li>
+            <div class="play player-list"></div>
+            <span>Ennio Morricone</span>
+            <audio src="assets/sounds/Ennio_Morricone.mp3"></audio>
+          </li>
+          <li>
+            <div class="play player-list"></div>
+            <span>Summer Wind</span>
+            <audio src="assets/sounds/Summer_Wind.mp3"></audio>
+          </li>
+        </ul>
+      </div>
+      -->
+      <div class="button">
+        <button class="btn"></button>
+      </div>
+      <h1>
+        <div class="date"></div>
+      </h1>
+      <div class="weather">
+        <div class="city" contenteditable="true"></div>
+        <i class="weather-icon owf"></i>
+        <div class="temperature"></div>
+        <div class="weather-description"></div>
+        <div class="humidity"></div>
+        <div class="wind"></div>
+      </div>
+    </div>
+    <div class="main">
+
+      <time class="time"></time>
+
+      <span class="greeting"></span>
+      <span class="name" contenteditable="true"></span>
+      <h2>What Is Your Focus For Today?</h2>
+      <h2 class="focus" contenteditable="true"></h2>
+    </div>
+    
+    <figure class="quote">
+      <blockquote>
+        You were not born a winner, and you were not born a loser. You are what you make yourself be.
+      </blockquote>
+      <figcaption>
+        Lou Holtz
+      </figcaption>
+      <button class="btn-quote"></button>
+    </figure>
+    <p class="git__logo"><a href="https://github.com/uto4ka101" class="git__logo-link">© 2023 github</a></p>
+    <div class="rs">
+        <a href="https://rs.school/js-stage0/" class="rs-link">Rolling Scopes School</a>
+    </div>
+  </div>
+  <script type="module" src="js/player.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/images.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/quotes.js"></script>
+  <script defer="defer" src="js/scr1.js"></script>
+</body>
+</html>
